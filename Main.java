@@ -68,6 +68,9 @@ class TicTacToe extends JFrame implements ActionListener{
 		if(gameMatrix[0][0]==gameMatrix[1][1] && gameMatrix[0][0]==gameMatrix[2][2]) {
 			win=gameMatrix[0][0];
 		}
+		if(gameMatrix[0][2]==gameMatrix[1][1] && gameMatrix[0][2]==gameMatrix[2][0]) {
+			win=gameMatrix[0][2];
+		}
 		if(win!=0) {
 			JOptionPane.showMessageDialog(null,"Player " + win + " has won the game","Game Over",JOptionPane.DEFAULT_OPTION);
 			dispose();
@@ -88,6 +91,9 @@ class TicTacToe extends JFrame implements ActionListener{
 		}
 		if(gameMatrix[0][0]==gameMatrix[1][1] && gameMatrix[0][0]==gameMatrix[2][2]) {
 			win=gameMatrix[0][0];
+		}
+		if(gameMatrix[0][2]==gameMatrix[1][1] && gameMatrix[0][2]==gameMatrix[2][0]) {
+			win=gameMatrix[0][2];
 		}
 		if(win!=0) {
 			JOptionPane.showMessageDialog(null,"Player " + win + " has won the game","Game Over",JOptionPane.DEFAULT_OPTION);
